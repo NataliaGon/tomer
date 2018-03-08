@@ -322,7 +322,7 @@ body{
 ******************
 */
 .what-you-get{
-    width: 100%;
+    width: 100vw;
     height: 32.5vw;
     background: #0069fb;
     position: relative;
@@ -708,6 +708,7 @@ table ul li{
 */
 .map{
     height: 38.43vw;
+    width: 100vw;
 }
 .google-map{
     width:71vw;
