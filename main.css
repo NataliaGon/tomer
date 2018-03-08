@@ -754,7 +754,7 @@ table ul li{
 @media (max-width:767px){
     .map{
         margin-top: 7.8vw;
-        height: 100vw;
+        height: 400vw;
     }
     .map .display-flex{
         flex-direction: column;
