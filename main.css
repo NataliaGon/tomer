@@ -499,8 +499,7 @@ body{
         display: none;;
     }
     .cost-description{
-    /* padding-bottom: 7.8vw; */
-    margin-top: 0vw;
+        margin-top: 0vw;
     }
     .cost .content-box{
         padding-top: 12vw;
@@ -771,6 +770,7 @@ table ul li{
     }
     .address-box img{
         width: 100%;
+        height: 48%;
     }
     .google-map{
         display: none;
