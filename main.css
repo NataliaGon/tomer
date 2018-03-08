@@ -1,0 +1,1109 @@
+/*
+******************
+* GENERAL
+******************
+*/
+@font-face {
+    font-family: 'almoni-tzar';
+    font-style: normal;
+    font-weight: 100;
+    src: url(./fonts/almoni-tzar-aaa-300.woff);    
+}
+@font-face {
+    font-family: 'almoni-tzar-bold';    
+    src: url(./fonts/almoni-tzar-aaa-700.woff);   
+}
+@font-face {
+    font-family: 'afek-regular';
+    font-style: normal;
+    font-weight: 100;
+    src: url(./fonts/afek-light-aaa.otf);    
+}
+@font-face {
+    font-family: 'afek-bold';    
+    src: url(./fonts/afek-bold-aaa.woff);   
+
+}
+@font-face {
+    font-family: 'Lucida';    
+    src: url(./fonts/Lucida-Sans-Regular.ttf);   
+}
+@font-face {
+    font-family: 'almoni-tzar-light';    
+    src: url(./fonts/Lucida-Sans-Regular.ttf);   
+}
+*{
+    box-sizing: border-box; 
+    letter-spacing: normal;; 
+}
+h1{
+    font-family: 'almoni-tzar-bold';     
+    font-size: 3.28125vw;
+}
+h2{
+    font-size: 2.8125vw;
+}
+h3{
+    font-family: 'almoni-tzar-bold';     
+    font-size: 2.1875vw;
+}
+h4{
+    font-family: 'afek-regular';
+    font-size: 1.875vw;
+    
+    letter-spacing: 0.3px;
+}
+h5{
+    font-family: 'afek-regular';
+    font-size: 1.71875vw;
+    letter-spacing: 0.3px;
+}
+h6{
+    font-family: 'afek-regular';
+    font-size: 1.5625vw;  
+    letter-spacing: 0.3px;
+}
+h1,h2,h3,h4,h5,h6{
+    direction: rtl;
+}
+.enlish-font{
+    font-family: 'Lucida';
+}
+a button, a span, a figure, a:link{
+    border:none;
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+.clear{
+    clear: both;
+}
+.content-box{
+    width: 93.7%;
+    height: 100%;
+    margin: auto;
+    padding-top: 7.8vw;
+    padding-bottom: 7.8vw;
+}
+.display-flex{
+    display:flex;
+}
+.registration{
+    width: 174px;
+    height: 56px;
+    line-height: 22px;
+    background-color: #0065ff;
+    border: none;
+    color: white;
+    font-family: 'almoni-tzar';
+    font-size: 24px;
+    font-weight: 800;
+}
+body{
+    overflow-x: hidden;
+    font-size: 24px;
+}
+@media (max-width:767px){
+    h1{
+        font-family: 'almoni-tzar-bold';     
+        font-size: 1.8em;
+        line-height: 1.1;
+    }
+    h2{
+        font-size: 1.8em;
+        line-height: normal;
+    }
+    h3{
+        font-family: 'almoni-tzar-bold';     
+        font-size: 1.05em;
+        line-height: normal;
+    }
+    h4{
+        font-family: 'afek-regular';
+        font-size: 0.8em; 
+        line-height: 1.7em;
+        letter-spacing: 0.3px;
+    }
+    h5{
+        font-family: 'afek-regular';
+        font-size: 0.825em;
+        letter-spacing: 0.3px;
+        line-height: 1.74em;
+    }
+    h6{
+        font-family: 'afek-regular';
+        font-size: .75em;  
+        letter-spacing: 0.3px;
+        line-height: 1.6em;
+    }
+    .content-box{
+        padding-top: 12vw;
+        padding-bottom: 12vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    .display-not-in-mob{
+        display:none;
+    }
+}
+/*
+******************
+* header
+******************
+*/  
+.header{
+    width: 100%;
+    height: 86px;
+    background: black;
+    position: fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    z-index: 4;
+}
+.header .content-box{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.header .display-flex{
+    align-items: center;
+    justify-content: space-between;
+}  
+.header div{
+    display: flex;
+    align-items: center;
+} 
+.header h6{
+    margin-left: 1vw;
+    color: white;
+} 
+@media (max-width:767px){
+    .header h6{
+        display: none;
+    } 
+}
+/*
+******************
+* invitation
+******************
+*/
+.invitation{
+    margin-top: 86px;
+    width: 100vw;
+    height: 35vw;  
+    color: white;
+}
+.invitation .content-box h1{
+   font-size: 5vw;
+}
+.invitation .content-box h2{
+    font-family: 'almoni-tzar'; 
+    margin-top: 2vw;
+}
+.invitation .content-box h4{
+    font-family: 'almoni-tzar';  
+}
+.invitation span{
+    text-decoration:underline;
+}  
+#box-for-text-invitation{
+    margin-right:  5vw;
+}
+#font-almani{
+    font-family: 'almoni-tzar';
+}
+@media (min-width:768px){
+  .invitation{
+    background-image: linear-gradient(210deg, #ff318a, #ff7158);
+  }
+}
+@media (max-width:767px){
+    .invitation{
+        height: auto;
+        text-align: center;    
+    }
+    #box-for-text-invitation h1{
+        font-size: 1.8em;
+    }
+    #box-for-text-invitation{
+        margin-right: 0px;
+    }
+    .invitation .content-box h2{
+        margin-top: 0;
+        font-size: 1.2em;
+    }
+    .invitation{
+        background-image: url('./img/main-background.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .aClassName{
+        display: none;
+        }
+}
+/*
+******************
+* description
+******************
+*/
+.why-important{
+    width: 100%;
+    height: 54.45vw;  
+    background:  #f3f3f3;
+}
+.container-for-video iframe {
+    width: 90.5%;
+    height: 57%;
+}
+.description h1{
+    display: block;
+    border-right: 5px solid #0069fb; 
+    padding-right: 2.18vw;
+    font-size: 3.04vw;
+    letter-spacing: normal;
+}
+.description h4{
+    display: block;
+    border-right: 5px solid #0069fb; 
+    padding-right: 2.18vw;
+    padding-top: 2vw;
+}
+@media (min-width:768px){
+    .description{
+        flex-basis:53%;
+    }
+    .container-for-video{
+        flex-basis:47%;
+    }
+    .description h4{
+        line-height: 2.8125vw;
+    }
+}
+@media (max-width:767px){
+    .why-important{
+        height: auto;
+    }
+    .why-important .display-flex{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container-for-video{
+        order: 2;
+        display:flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 7.8vw;
+    }
+    .container-for-video iframe {
+        width:100%;
+        height:100%;
+    }
+    .description{
+        order: 1;
+    }
+    .description h1{
+        font-size: 1.8em;
+        padding-right: 4vw;
+    }
+    .description h4{
+        padding-right: 4vw;
+    }
+    .container-for-video iframe{
+        width: 89vw;
+        height: 50vw;
+    }
+}
+/*
+******************
+* what-you-get
+******************
+*/
+.what-you-get{
+    width: 100%;
+    height: 32.5vw;
+    background: #0069fb;
+    position: relative;
+}
+.what-you-get .content-box{
+    height: auto;
+    margin-top: -2vw;
+}
+.you-get{
+    flex-basis: 50%;
+}
+.what-you-get h1, .you-get{
+    flex-basis: 50%;
+    color: white;
+}
+.you-get hr{ 
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.rectangle{
+    width: 100%;
+    height: 20px;
+    position: absolute;
+}
+.rectangle-1{
+    width: 30%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin-right: 3.15vw;
+}
+.rectangle-for-mob{
+    display: none;
+}
+@media (max-width:767px){
+    .what-you-get{
+        height: auto;
+    }
+    .what-you-get .display-flex{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .what-you-get h1{
+        order:1;
+        margin-top: -2vw;
+    }
+    .you-get{
+        order:2;
+        margin-top: 6vw;
+    }
+    .rectangle-1{
+        display: none;
+    }
+    .you-get hr{
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+    .rectangle{
+        display: none;
+    }
+    .rectangle-for-mob{
+        display: block;
+        width: 100%;
+        height: 20px;
+        position: absolute;
+    }
+}
+/*
+******************
+* class-help-in
+******************
+*/
+.class-help-in{
+    width: 100%;
+    height: 52vw; 
+}
+.class-help-in h1{
+    margin-right: 1.6vw;
+}
+.help-in-description{
+    display: flex;
+    margin-top: 2vw;
+}
+.help-box{
+    flex: 1 1 0;
+    margin: 1.6vw;
+    border-right: 5px solid;
+    border-image: linear-gradient(#ff318a, #ff7158) 1;
+}
+.help-box h3, .help-box h6{
+    margin-right: 3vw;
+    line-height: 1.5;
+}
+.help-box h3{
+    margin-top: 1.5vw;
+}
+.help-box h6{
+    margin-top: 1vw;
+}
+@media (max-width:767px){
+    .class-help-in{
+        height: auto; 
+    }
+    .help-in-description{
+        flex-direction: column;
+    }
+    .help-box{
+       margin:  3vw;
+    }
+}
+/*
+******************
+* cost
+******************
+*/
+.cost{
+    width: 100%;
+    height: 43vw;
+}
+.cost .content-box {
+    background-color: #f5f5f5;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.cost-photo, .cost-description{
+    flex: 1 1 0;
+}
+.cost-description{
+    margin-top:7.2vw;
+    text-align: right;
+}
+.cost-description span{
+    font-family: 'afek-bold';
+}
+.cost-description div{
+    margin-right: 5.7vw;
+}
+.cost-description div h4{
+    margin-left: 3vw; 
+}
+.cost-description .registration{
+    margin-top: 2.76vw;
+}
+.cost-photo{
+    display: flex;
+    position: relative;
+}
+.side-rectangle-big{
+    width: 33.75vw;
+    opacity: 0.4;
+}
+.anime-img{
+    position: absolute;
+    right: 0px;
+    margin-top:7.2vw;
+    text-align: right;
+}
+.anime-img img{
+    width: 75%;
+}
+.anime-img figcaption h6{
+    margin-left: 40%;
+    text-align: right;
+    margin-top: 1vw;
+}
+@media (max-width:767px){
+    .cost{
+        height: auto;
+    }
+    .cost-photo {
+        display: none;;
+    }
+    .cost-description{
+    /* padding-bottom: 7.8vw; */
+    margin-top: 0vw;
+    }
+    .cost .content-box{
+        padding-top: 12vw;
+        padding-bottom: 12vw;
+    }
+}
+/*
+******************
+* program
+******************
+*/
+.program{
+    width: 100%;  
+}
+.program .display-flex{
+    justify-content: center;
+}
+.program .content-box{
+    padding-top: 6.25vw;
+}
+#title-for-program{
+    margin-right: 12vw;  
+    padding-top: 7.8vw;
+}
+table{
+    margin-top: -1.8vw;
+    font-family: 'afek-regular';
+    font-size: 1.5625vw; 
+    line-height: 1.4vw;
+    margin-right: 2vw;
+}
+table tr td:nth-child(3){
+    font-family: 'almoni-tzar-bold'; 
+    font-size: 2.1875vw;
+    text-align: right;
+    width:20%;
+}
+table tr td:nth-child(2){
+    font-family: 'almoni-tzar'; 
+    font-size: 2.1875vw;
+    font-weight: 500;
+    line-height: 2.656vw;
+}
+table tr:nth-child(1) td:nth-child(2){
+    font-family: 'almoni-tzar-bold';
+    font-size: 2.1875vw;
+    text-align: right;
+}
+.second-column{
+    width:40%;
+}
+table tr td{
+    border-bottom: 1px solid rgb(175, 173, 173);
+}
+table tr:last-child td{
+    border-bottom:none;
+}
+table span{
+    font-family: 'almoni-tzar-bold';     
+    font-size: 2.1875vw;
+}
+table img{
+    width: 50%;
+}
+table td{
+    text-align: right;
+    padding-top: 2.7vw;
+    padding-bottom: 2.7vw;
+}
+.group-28{
+    height: 103vw;
+    margin-right: 5.7vw;
+}
+table .enlish-font{
+    font-weight: 900;
+    font-size: 2.1875vw;
+    line-height: 2.656vw;
+}
+table ul{
+    direction: rtl;
+    list-style-type: square;
+}
+table ul li{
+    line-height: 1.8;
+}
+@media (min-width:768px){
+    .table-for-mobile{
+        display: none;
+    }
+}
+@media (max-width:767px){
+    .table-and-img{
+        display: none;
+    }
+    .group-28{
+        display:none;
+    }
+    .table-for-mobile{
+        display: block;
+        text-align: right;
+        width: 100%;
+    }
+    .table-for-mobile div{
+        border-bottom: 1px solid rgb(175, 173, 173);
+        padding: 7.8vw;
+    }
+    .table-for-mobile div:last-child{
+        border-bottom: none;
+    }
+    .program .display-flex{
+        justify-content: flex-end;
+    }
+    .table-for-mobile div ul{
+        list-style-type: disc;
+        direction: rtl;
+        margin-right: 4vw;
+    }
+    .font-for-table{
+        font-family: 'almoni-tzar';
+        font-size: 1.05em;
+    }
+}
+/*
+******************
+* tomer-sharon
+******************
+*/
+.tomer-sharon{
+    width: 100%;
+    height: 62vw;
+    background: black;
+    background-image:url('./img/sharon.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;  
+    color: white;
+}
+.tomer-sharon .display-flex{
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.about-t-sh{
+    width: 50%;
+}
+.tomer-sharon h6{
+    line-height: 2.34vw;
+}
+.icon-twitter{
+    font-size: 2.7vw;
+    margin-right: 1vw;
+}
+.icon-linkedin2{
+    font-size: 2.8vw;
+}
+.social-icons{
+    margin-top: 2vw;
+}
+@media (max-width:767px){
+    .about-t-sh{
+        width: 100%; 
+    }
+    .tomer-sharon h6 {
+        line-height: 1.6em;
+    }
+    .tomer-sharon {
+        height: auto;
+    }
+    .icon-twitter{
+        margin-right: 0.5em;
+    }
+    .icon-twitter, .icon-linkedin2{
+    font-size: 1.7em;
+    }
+}
+/*
+******************
+* finally-in-israel
+******************
+*/
+.finally-in-israel{
+    width: 100%;
+    height: 31.3vw;
+}
+.finally-in-israel h1{
+    width: 35vw;
+    align-self: flex-start;
+}
+.finally-in-israel .display-flex{
+    justify-content: space-between;
+    align-items: center;
+}
+.finally-in-israel img{
+   width:  13.9vw;
+   height: 13.98vw;
+}
+@media (max-width:767px){
+    .finally-in-israel{
+        display: none;
+    }
+}
+/*
+******************
+* map
+******************
+*/
+.map{
+    height: 38.43vw;
+}
+.google-map{
+    width:71vw;
+    background-image: url('./img/map.png');
+    background-size: contain;
+}
+.address-box{
+    width: 28vw;
+    background: #d4d4d4;
+}
+.map .content-box{
+    padding-top: 0vw; 
+}
+.map .display-flex{
+    justify-content: space-around;
+}
+.address-box h2{
+    font-family: 'almoni-tzar-bold'; 
+}  
+.address-box h6{
+    margin-top: 2vw;
+}
+.address-box h2, .address-box h6{
+   padding-right: 1.7vw;
+   padding-left: 1.7vw; 
+}
+#box-for-text-in-adress-box{
+    border-right: 5px solid #0069fb; 
+    padding-right: 0.5vw;
+}
+@media (min-width:768px){
+    .address-box img{ 
+        width: 28vw;
+        height: 11vw;
+        margin-top: 2.55vw;
+    } 
+    #box-for-text-in-adress-box{
+        width: 90%;
+    } 
+    .address-box h2{
+        margin-top: 2.239vw;
+    }
+}
+@media (max-width:767px){
+    .map{
+        margin-top: 7.8vw;
+        height: auto;
+    }
+    .map .display-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .address-box{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 48%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .address-box img{
+        width: 100%;
+    }
+    .google-map{
+        width: 100%;
+        height: 48%;
+        order:2;
+    }
+    #box-for-text-in-adress-box{
+        padding: 12vw;
+    }
+    
+}
+/*
+******************
+* arrival
+******************
+*/
+.arrival{
+    width: 100%;
+    height: 43vw;  
+}
+#header-for-arrival{
+    margin-right: 3.15%;  
+    padding-bottom: 3.15%;
+}
+.arrival .content-box{
+    border-style: solid;
+    border-width: 5px;
+    border-image-source: linear-gradient(30deg, #ff4978, #ff8348);
+    border-image-slice: 1;
+    justify-content: flex-end;
+}
+.bus-or-car{
+    margin-right:5.6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content-bus-or-car{
+    display: flex;
+    justify-content: space-between;
+}
+.isntructions{
+    width: 32.34vw;
+    text-align: right;
+    margin-right: 5vw;
+    position: relative;
+}
+.isntructions img{
+    width:37vw;
+}
+.choose-bus-or-car{
+    width: 100%;
+}
+.choose-bus-or-car,.car, .bus{
+    display: flex;
+    justify-content: flex-end;
+}
+.border-black {
+    border-bottom: 5px solid black;
+    padding-bottom: 1vw;
+}
+.border-gray{
+    border-bottom: 5px solid #D8D8D8;
+    padding-bottom: 1vw;
+}
+.car img{
+    width: 26px;
+    height: 29px;
+    margin-left: 1vw;
+}
+.bus img{
+    width: 26px; 
+    height: 31px;
+    margin-left: 1vw; 
+}
+.car{
+    cursor: pointer;
+}
+.bus{
+    margin-right: 4vw;  
+    cursor: pointer;
+    color:#D8D8D8;
+}
+#car-black{
+    display: block;
+}
+#bus-black{
+    display: none;
+}
+#car-gray{
+    display: none;
+}
+#bus-gray{
+    display: block;
+}
+.content-bus-or-car ul{
+    list-style-image: url(./img/plus.png);
+    margin-top:1.5vw;
+    margin-right: 1.2vw;
+}
+.content-bus-or-car ul li{
+    line-height: 2;
+}
+.content-bus-or-car ul li{
+    font-family: 'afek-regular';
+    font-size: 22px;
+    text-align: right;
+    direction: rtl;
+}
+.content-bus-or-car ul li span{
+    font-family: 'afek-bold';
+    font-size: 22px;
+}
+.content-for-car h4:nth-child(2){
+    font-family: 'afek-bold'; 
+    margin-top: 3vw;
+}
+.content-for-car{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.isntructions button{
+    width: 202px;
+    height: 56px;
+    background-color: white;
+    border: 3px solid #0065ff;
+    color: #0065ff;
+    font-family: 'almoni-tzar-bold';
+    font-size: 24px;
+    margin-top: 1.5vw;
+}
+.info-for-bus{
+    display: none;
+}
+.isntructions h5{
+    line-height: 2.656vw;
+}
+#waze-img{
+    width: 15%;
+}
+@media (min-width:768px){
+.isntructions button{
+    display: none;
+}
+}
+@media (max-width:767px){
+    .arrival{
+        width: 100%;
+        height: auto;  
+    }
+    .content-bus-or-car{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    .bus-or-car{
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    .arrival .content-box{
+        justify-content: flex-end;
+    }
+    .isntructions{
+        margin-right: 0px;
+        width: 80%;
+        margin-top:4vw;
+    }
+    .content-for-car{
+        margin-right: 2vw;
+        margin-top: 6vw;
+    }
+    .content-for-bus{
+        margin-top: 6vw;
+    }
+    .choose-bus-or-car{
+        justify-content: flex-end;
+    }
+    #bus-img-arrive{
+        width:auto;
+        margin-left: 12vw;
+        margin-top: 2vw;
+    }
+    .isntructions h5{
+        line-height: 1.74em;
+    }
+}
+/*
+******************
+* text-us
+******************
+*/
+.text-us{
+    margin-top: 7.8vw;
+    width: 100%;
+    height: 27.81vw;
+    background-image: linear-gradient(13deg, #ff4978, #ff8348);
+    color: white;
+}
+.text-us .content-box{
+    background-image:url('./img/group-18.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: left;
+    text-align: center;
+}
+.text-us .content-box h1{
+    margin-top: 2.5vw;
+}
+@media (max-width:767px){
+    .text-us{
+        height: auto;
+    }
+    .text-us .content-box{
+        background-image: none;
+    }
+}
+/*
+******************
+* create
+******************
+*/
+.create{
+    width: 100%;
+    height: 46.64vw;
+    background-color:rgb(8, 8, 8);
+    background-image:url('./img/girls.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color:white;
+}
+.create .display-flex{
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.create h6{
+    margin-top: 1vw;
+    line-height: 2.26vw;
+}
+.logo-red{
+    margin-top: -10px;
+}
+@media (max-width:767px){
+    .create .content-box div{
+        width: 100%;
+    }
+    .create{
+        height: auto;
+    }
+    .create h6 {
+        line-height: 1.6em;
+    }
+}
+/*
+******************
+* footer
+******************
+*/
+.footer{
+    width: 100%;
+    height: 55vw;
+    background: black;
+    color: white; 
+}
+.footer h4{
+    font-family: 'almoni-tzar-bold'; 
+}
+.choose-create{
+    margin-top: 3vw;
+}
+.create-option img{
+    height: 14.8vw;
+    width: 17.7vw;
+    position: relative;
+}
+.create-option{
+    position: relative;
+}
+.footer h4{
+    margin-top: 1vw;
+}
+.footer .display-flex{
+    justify-content: space-between;
+}
+.footer hr{
+    height: 1px;
+    margin-top: 7.78vw;
+    background-color: #D8D8D8;
+}    
+#footer-end{
+    margin-top: 1.95vw;
+}
+.img-switch{
+    display:none;
+}
+.create-option div:hover> .img-switch {
+    display: block;
+}
+.create-option div:hover> .img-default {
+    display:none;
+}
+@media (min-width:768px){
+    .footer h6{
+        line-height: 2.07vw;
+    }
+    .choose-create h6, .choose-create h4{
+        width: 17.7vw;  
+    }
+}
+@media (max-width:767px){
+    .footer{
+       height: auto;    
+    }
+    .footer .display-flex{
+     flex-direction: column;
+     justify-content: space-between;
+    }
+    .create-option{
+        display: flex;
+       justify-content: space-between;
+       direction: rtl;
+       margin-top: 4vw;
+    } 
+    .create-option img{
+        height: 29.6vw;
+        width: 35.4vw;
+        position: relative;
+    }
+    .choose-create{
+        height: 92%;
+    }
+    .choose-create h6, .choose-create h4{
+        width: 50vw;  
+    }
+    
+}
